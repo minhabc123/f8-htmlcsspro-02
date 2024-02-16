@@ -2,10 +2,287 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #fffcf4;
+}
+
 html {
     font-size: 62.5%;
 }
 
 body {
     font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* common */
+
+main {
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: 0em;
+    min-width: 118px;
+    padding: o 16px;
+    border-radius: 25px;
+    background-color: var(--color-btn, #171100);
+    color: var(--primary-color);
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ========HEADER======== */
+
+/* common header */
+
+.header {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    background-color: #fffcf4;
+}
+
+.header .content {
+    padding: 36px 0 12px;
+}
+
+/* Navbar  */
+
+.header .navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.header ul {
+    display: flex;
+    margin-left: 491px;
+}
+
+.header .nav ul a {
+    padding: 0 21px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+    letter-spacing: 0em;
+    color: #5f5b53;
+}
+
+/* Navbar home & :after */
+
+.header .navbar .home {
+    position: relative;
+    color: #171100;
+}
+
+.header .nav .home a {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    color: #171100;
+}
+
+.header .nav .home:after {
+    position: absolute;
+    left: 21px;
+    top: 26px;
+    content: "";
+    width: 12px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #171100;
+}
+/* +action- btn */
+
+.header .action {
+    margin-left: auto;
+}
+
+.header .action .btn-sign-up {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: 0em;
+}
+/*==========MAIN========= */
+
+/*======HERO===== */
+
+.hero {
+    background-color: var(--primary-color);
+}
+
+/* common hero */
+
+.content {
+    padding: 50px 0 65px;
+    display: flex;
+    background-color: var(--primary-color);
+}
+
+/* HERO IMG */
+
+.main .hero-img {
+    position: relative;
+    width: 570px;
+    height: 685px;
+}
+
+/* thong  tin khoa hoc(list course)*/
+
+.hero-img .list-courses .content {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-img .list-courses {
+    position: absolute;
+    right: 0;
+    bottom: -48px;
+    width: 270px;
+    height: 244px;
+    border-radius: 12px;
+    /* color: #ffffff; */
+    box-shadow: 0px 16px 32px 0px #0000000d;
+}
+
+.hero-img .list-courses .item {
+    display: flex;
+}
+
+.hero-img .list-courses .subscript {
+    margin-left: 16px;
+}
+.hero-img .list-courses .sub-title {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #5f5b53;
+}
+
+.hero-img .list-courses strong {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #171100;
+}
+/* HERI INFO */
+
+.hero-info {
+    margin-left: 130px;
+    width: 470px;
+    height: 558px;
+    border-radius: 32px;
+}
+
+.main .title {
+    /* font-family: Sen, sans-serif; */
+    font-size: 5.8rem;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #171100;
+}
+
+.main .hero-info .desc {
+    margin-top: 22px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #5f5b53;
+}
+
+.hero-info .group-btn {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-info .play-btn {
+    display: block;
+}
+
+.hero-info .btn {
+    background-color: var(--color-btn, #ffb900);
+}
+
+.hero-info .video {
+    display: flex;
+    align-items: center;
+    margin-left: 28px;
+}
+
+.video p {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.65;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #171100;
+}
+
+.hero-info .thanhtich .desc-2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+    margin-top: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #5f5b53;
+}
+
+.sluong {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.sluong strong {
+    margin-right: 24px;
+    font-family: Sen;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #171100;
+}
+
+.sluong p {
+    margin-right: 28px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #5f5b53;
 }
